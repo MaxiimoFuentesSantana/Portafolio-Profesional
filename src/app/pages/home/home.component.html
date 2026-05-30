@@ -1,0 +1,75 @@
+<div class="page-enter">
+
+  <section class="hero">
+
+    <!-- TEXTO PRINCIPAL -->
+    <div class="hero-content">
+      <h1>Máximo Fuentes</h1>
+
+      <h2>Ingeniero Informático · Desarrollador Full Stack</h2>
+
+      <p class="description">
+        Desarrollo aplicaciones web modernas utilizando tecnologías como
+        <strong>Python, Java, Django e Ionic</strong>, enfocándome en soluciones
+        limpias, escalables y orientadas a resultados.
+      </p>
+    </div>
+
+    <!-- BOTONES -->
+    <div class="side-actions">
+
+      <a
+        href="https://github.com/MaxiimoFuentesSantana"
+        target="_blank"
+        class="action-btn"
+      >
+        <span class="icon">🐙</span>
+        <span class="label">GitHub</span>
+      </a>
+
+   <button class="action-btn" type="button" (click)="goToProjects()">
+  <span class="icon">🗂️</span>
+  <span class="label">Proyectos</span>
+</button>
+
+
+
+      <button
+        class="action-btn"
+        type="button"
+        (click)="toggleAbout()"
+      >
+        <span class="icon">👤</span>
+        <span class="label">Sobre mí</span>
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- SOBRE MÍ -->
+<section
+  class="about-section"
+  [class.show]="showAbout"
+  #aboutSection
+>
+  <div class="about-container">
+
+    <!-- TEXTO -->
+    <div class="about-text">
+      <h3>Sobre mí</h3>
+      <p>
+        Maximo Fuentes
+Ingeniero en Informática, con experiencia y conocimientos sólidos en programación en Python y Java. Actualmente, se encuentra ampliando sus competencias en .NET. Posee una base sólida en el manejo de Excel y una amplia experiencia en la administración de bases de datos, destacándose en Oracle SQL, MySQL y Firebase. Se especializa en el desarrollo de aplicaciones y páginas web funcionales, escalables y orientadas a brindar soluciones eficientes.
+      </p>
+    </div>
+
+    <!-- IMAGEN -->
+    <div class="about-image">
+      <img src="assets/Perfil2.jpeg" alt="Foto de perfil">
+    </div>
+
+  </div>
+</section>
+
+</div>

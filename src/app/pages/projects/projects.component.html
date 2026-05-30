@@ -1,0 +1,141 @@
+<!-- PROJECT CARD -->
+<div class="project-card">
+
+  <!-- IMAGEN PRINCIPAL -->
+  <div class="project-preview">
+    <img 
+      src="assets/Gestor de Vehiculos.png" 
+      alt="Gestor de Vehículos"
+    >
+  </div>
+
+  <!-- CONTENIDO -->
+  <div class="project-content">
+
+    <h3>Gestor de Vehículos</h3>
+
+    <p class="project-description">
+      Sistema Full Stack de gestión vehicular desarrollado para administrar flotas, conductores e historial de viajes mediante control de roles y seguimiento operativo en tiempo real.
+    </p>
+
+    <div class="project-features">
+      <span>✓ Gestión de vehículos</span>
+      <span>✓ Historial y seguimiento de viajes</span>
+      <span>✓ Roles de usuario (Admin, Supervisor y Conductor)</span>
+      <span>✓ Inspección vehicular con evidencias fotográficas</span>
+    </div>
+
+    <div class="tech-stack">
+      <span>React</span>
+      <span>Flask</span>
+      <span>SQLAlchemy</span>
+      <span>SQLite</span>
+    </div>
+
+    <div class="project-buttons">
+
+      <a 
+        href="https://github.com/MaxiimoFuentesSantana/gestor-de-vehiculos"
+        target="_blank"
+        class="btn btn-github"
+      >
+        Ver Código
+      </a>
+
+      <a 
+        href="https://www.youtube.com/watch?v=MQ5RJbfJgQ4"
+        target="_blank"
+        class="btn btn-demo"
+      >
+        ▶ Ver Video
+      </a>
+
+    </div>
+
+    <!-- GALERÍA -->
+    <!-- GALERÍA -->
+<div class="preview-gallery">
+
+  <img 
+    src="assets/Login.jpg"
+    onclick="document.getElementById('modal').style.display='flex';document.getElementById('modal-img').src=this.src"
+  >
+
+  <img 
+    src="assets/Vista_ADMIN_1.jpg"
+    onclick="document.getElementById('modal').style.display='flex';document.getElementById('modal-img').src=this.src"
+  >
+
+  <img 
+    src="assets/Vista_admin_3.jpg"
+    onclick="document.getElementById('modal').style.display='flex';document.getElementById('modal-img').src=this.src"
+  >
+
+  <img 
+    src="assets/Vista_admin_4.jpg"
+    onclick="document.getElementById('modal').style.display='flex';document.getElementById('modal-img').src=this.src"
+  >
+
+  <img 
+    src="assets/Vista_conductor_1.jpg"
+    onclick="document.getElementById('modal').style.display='flex';document.getElementById('modal-img').src=this.src"
+  >
+
+</div>
+
+<!-- MODAL -->
+
+<div id="modal" class="gallery-modal">
+
+  <span 
+    class="gallery-close"
+    onclick="document.getElementById('modal').style.display='none'"
+  >
+    &times;
+  </span>
+
+  <img id="modal-img">
+
+</div>
+
+<!-- MODAL -->
+
+<div id="imageModal" class="image-modal">
+
+  <span class="close-modal" onclick="closeModal()">
+    &times;
+  </span>
+
+  <img id="modalImage">
+
+</div>
+
+<script>
+
+function openModal(imageSrc){
+
+    document.getElementById("imageModal").style.display = "flex";
+
+    document.getElementById("modalImage").src = imageSrc;
+
+}
+
+function closeModal(){
+
+    document.getElementById("imageModal").style.display = "none";
+
+}
+
+/* CERRAR CLICK FUERA */
+
+document.getElementById("imageModal").addEventListener("click", function(e){
+
+    if(e.target.id === "imageModal"){
+
+        closeModal();
+
+    }
+
+});
+
+</script>
